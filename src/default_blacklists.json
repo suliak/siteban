@@ -1,0 +1,18 @@
+[
+  { 
+    "name": "Welding",
+    "list": [
+      { "url": "weldguru.com" },
+      { "url": "weldingchamps.com"},
+      { "url": "craftsmanprotools.com" },
+      { "url": "toolsfirst.com"}
+    ]
+  },
+  {
+    "name": "Woodworking",
+    "list": [
+      { "url": "craftsmanprotools.com" },
+      { "url": "toolsfirst.com"}
+    ]
+  }
+]

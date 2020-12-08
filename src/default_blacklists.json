@@ -1,6 +1,7 @@
 [
   { 
     "name": "Welding",
+    "user": false,
     "list": [
       { "url": "weldguru.com" },
       { "url": "weldingchamps.com"},
@@ -10,6 +11,7 @@
   },
   {
     "name": "Woodworking",
+    "user": false,
     "list": [
       { "url": "craftsmanprotools.com" },
       { "url": "toolsfirst.com"}

@@ -1,4 +1,5 @@
 <script>
+	import List from './List.svelte';
 	export let blacklists;
 	let selected = blacklists[0];
 	let search = '';
@@ -17,17 +18,21 @@
 <main>
 	<h1>Siteban</h1>
 	<p>Tired of so called 'review' sites that are just generated content with links to Amazon?</p>
-	<p>Select a blacklist and search </p>
-	<input bind:value={search} on:keydown={handleKeydown}>
+	<p>
+		<span id='label-select-list'>Select a blacklist</span> and
+		<span id='label-search-text'> search</span>
+	</p>
+	<input aria-labelledby='label-search-text' bind:value={search} on:keydown={handleKeydown}>
 	<button on:click={searchGoogle}>Search Google</button>
 	<p>{selected.name}: {selected.list.length} Sites banned</p>
-	<select bind:value={selected}>
+	<select aria-labelledby='label-select-list' bind:value={selected}>
 		{#each blacklists as list}
 			<option value={list}>
 				{list.name}
 			</option>
 		{/each}
 	</select>
+	<List selected={selected} />
 </main>
 
 <style>
